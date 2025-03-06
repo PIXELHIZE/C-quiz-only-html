@@ -78,7 +78,6 @@
   </div>
   
   <script>
-    // 문제 배열 (총 30문제)
     var questions = [
       {
         id: 1,
@@ -374,7 +373,6 @@
           feedback.innerHTML = "<span style='color:red;'>오답입니다. 정답: " + q.correct + "</span><br><small>" + q.explanation + "</small>";
         }
       } else {
-        // 주관식은 정답 표시
         feedback.innerHTML = "<span style='color:blue;'>참고 정답: " + q.correct + "</span><br><small>" + q.explanation + "</small>";
       }
       document.getElementById("submit-btn").style.display = "none";
@@ -388,7 +386,6 @@
       displayQuestion();
     });
     
-    // 첫 문제 표시
     displayQuestion();
   </script>
 </body>
